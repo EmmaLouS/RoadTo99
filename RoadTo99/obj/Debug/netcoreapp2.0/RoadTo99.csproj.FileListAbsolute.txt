@@ -1,0 +1,11 @@
+D:\dev\RoadTo99\RoadTo99\bin\Debug\netcoreapp2.0\RoadTo99.deps.json
+D:\dev\RoadTo99\RoadTo99\bin\Debug\netcoreapp2.0\RoadTo99.runtimeconfig.json
+D:\dev\RoadTo99\RoadTo99\bin\Debug\netcoreapp2.0\RoadTo99.runtimeconfig.dev.json
+D:\dev\RoadTo99\RoadTo99\bin\Debug\netcoreapp2.0\RoadTo99.dll
+D:\dev\RoadTo99\RoadTo99\bin\Debug\netcoreapp2.0\RoadTo99.pdb
+D:\dev\RoadTo99\RoadTo99\obj\Debug\netcoreapp2.0\RoadTo99.csprojAssemblyReference.cache
+D:\dev\RoadTo99\RoadTo99\obj\Debug\netcoreapp2.0\RoadTo99.csproj.CoreCompileInputs.cache
+D:\dev\RoadTo99\RoadTo99\obj\Debug\netcoreapp2.0\RoadTo99.AssemblyInfoInputs.cache
+D:\dev\RoadTo99\RoadTo99\obj\Debug\netcoreapp2.0\RoadTo99.AssemblyInfo.cs
+D:\dev\RoadTo99\RoadTo99\obj\Debug\netcoreapp2.0\RoadTo99.dll
+D:\dev\RoadTo99\RoadTo99\obj\Debug\netcoreapp2.0\RoadTo99.pdb
