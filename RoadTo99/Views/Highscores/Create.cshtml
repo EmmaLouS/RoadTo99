@@ -1,0 +1,402 @@
+﻿@model RoadTo99.Models.Highscore
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h2>Create</h2>
+
+<h4>Highscore</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="HighscoreId" class="control-label"></label>
+                <input asp-for="HighscoreId" class="form-control" />
+                <span asp-validation-for="HighscoreId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PlayerId" class="control-label"></label>
+                <select asp-for="PlayerId" class ="form-control" asp-items="ViewBag.PlayerId"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="DownloadDate" class="control-label"></label>
+                <input asp-for="DownloadDate" class="form-control" />
+                <span asp-validation-for="DownloadDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TotalRank" class="control-label"></label>
+                <input asp-for="TotalRank" class="form-control" />
+                <span asp-validation-for="TotalRank" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TotalLevel" class="control-label"></label>
+                <input asp-for="TotalLevel" class="form-control" />
+                <span asp-validation-for="TotalLevel" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TotalXp" class="control-label"></label>
+                <input asp-for="TotalXp" class="form-control" />
+                <span asp-validation-for="TotalXp" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AttackRank" class="control-label"></label>
+                <input asp-for="AttackRank" class="form-control" />
+                <span asp-validation-for="AttackRank" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AttackLevel" class="control-label"></label>
+                <input asp-for="AttackLevel" class="form-control" />
+                <span asp-validation-for="AttackLevel" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AttackXp" class="control-label"></label>
+                <input asp-for="AttackXp" class="form-control" />
+                <span asp-validation-for="AttackXp" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DefenceRank" class="control-label"></label>
+                <input asp-for="DefenceRank" class="form-control" />
+                <span asp-validation-for="DefenceRank" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DefenceLevel" class="control-label"></label>
+                <input asp-for="DefenceLevel" class="form-control" />
+                <span asp-validation-for="DefenceLevel" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DefenceXp" class="control-label"></label>
+                <input asp-for="DefenceXp" class="form-control" />
+                <span asp-validation-for="DefenceXp" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="StrengthRank" class="control-label"></label>
+                <input asp-for="StrengthRank" class="form-control" />
+                <span asp-validation-for="StrengthRank" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="StrengthLevel" class="control-label"></label>
+                <input asp-for="StrengthLevel" class="form-control" />
+                <span asp-validation-for="StrengthLevel" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="StrengthXp" class="control-label"></label>
+                <input asp-for="StrengthXp" class="form-control" />
+                <span asp-validation-for="StrengthXp" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="HitpointsRank" class="control-label"></label>
+                <input asp-for="HitpointsRank" class="form-control" />
+                <span asp-validation-for="HitpointsRank" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="HitpointsLevel" class="control-label"></label>
+                <input asp-for="HitpointsLevel" class="form-control" />
+                <span asp-validation-for="HitpointsLevel" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="HitpointsXp" class="control-label"></label>
+                <input asp-for="HitpointsXp" class="form-control" />
+                <span asp-validation-for="HitpointsXp" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="RangedRank" class="control-label"></label>
+                <input asp-for="RangedRank" class="form-control" />
+                <span asp-validation-for="RangedRank" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="RangedLevel" class="control-label"></label>
+                <input asp-for="RangedLevel" class="form-control" />
+                <span asp-validation-for="RangedLevel" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="RangedXp" class="control-label"></label>
+                <input asp-for="RangedXp" class="form-control" />
+                <span asp-validation-for="RangedXp" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PrayerRank" class="control-label"></label>
+                <input asp-for="PrayerRank" class="form-control" />
+                <span asp-validation-for="PrayerRank" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PrayerLevel" class="control-label"></label>
+                <input asp-for="PrayerLevel" class="form-control" />
+                <span asp-validation-for="PrayerLevel" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PrayerXp" class="control-label"></label>
+                <input asp-for="PrayerXp" class="form-control" />
+                <span asp-validation-for="PrayerXp" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MagicRank" class="control-label"></label>
+                <input asp-for="MagicRank" class="form-control" />
+                <span asp-validation-for="MagicRank" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MagicLevel" class="control-label"></label>
+                <input asp-for="MagicLevel" class="form-control" />
+                <span asp-validation-for="MagicLevel" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MagicXp" class="control-label"></label>
+                <input asp-for="MagicXp" class="form-control" />
+                <span asp-validation-for="MagicXp" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CookingRank" class="control-label"></label>
+                <input asp-for="CookingRank" class="form-control" />
+                <span asp-validation-for="CookingRank" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CookingLevel" class="control-label"></label>
+                <input asp-for="CookingLevel" class="form-control" />
+                <span asp-validation-for="CookingLevel" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CookingXp" class="control-label"></label>
+                <input asp-for="CookingXp" class="form-control" />
+                <span asp-validation-for="CookingXp" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="WoodcuttingRank" class="control-label"></label>
+                <input asp-for="WoodcuttingRank" class="form-control" />
+                <span asp-validation-for="WoodcuttingRank" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="WoodcuttingLevel" class="control-label"></label>
+                <input asp-for="WoodcuttingLevel" class="form-control" />
+                <span asp-validation-for="WoodcuttingLevel" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="WoodcuttingXp" class="control-label"></label>
+                <input asp-for="WoodcuttingXp" class="form-control" />
+                <span asp-validation-for="WoodcuttingXp" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FletchingRank" class="control-label"></label>
+                <input asp-for="FletchingRank" class="form-control" />
+                <span asp-validation-for="FletchingRank" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FletchingLevel" class="control-label"></label>
+                <input asp-for="FletchingLevel" class="form-control" />
+                <span asp-validation-for="FletchingLevel" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FletchingXp" class="control-label"></label>
+                <input asp-for="FletchingXp" class="form-control" />
+                <span asp-validation-for="FletchingXp" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FishingRank" class="control-label"></label>
+                <input asp-for="FishingRank" class="form-control" />
+                <span asp-validation-for="FishingRank" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FishingLevel" class="control-label"></label>
+                <input asp-for="FishingLevel" class="form-control" />
+                <span asp-validation-for="FishingLevel" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FishingXp" class="control-label"></label>
+                <input asp-for="FishingXp" class="form-control" />
+                <span asp-validation-for="FishingXp" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FiremakingRank" class="control-label"></label>
+                <input asp-for="FiremakingRank" class="form-control" />
+                <span asp-validation-for="FiremakingRank" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FiremakingLevel" class="control-label"></label>
+                <input asp-for="FiremakingLevel" class="form-control" />
+                <span asp-validation-for="FiremakingLevel" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FiremakingXp" class="control-label"></label>
+                <input asp-for="FiremakingXp" class="form-control" />
+                <span asp-validation-for="FiremakingXp" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CraftingRank" class="control-label"></label>
+                <input asp-for="CraftingRank" class="form-control" />
+                <span asp-validation-for="CraftingRank" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CraftingLevel" class="control-label"></label>
+                <input asp-for="CraftingLevel" class="form-control" />
+                <span asp-validation-for="CraftingLevel" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CraftingXp" class="control-label"></label>
+                <input asp-for="CraftingXp" class="form-control" />
+                <span asp-validation-for="CraftingXp" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SmithingRank" class="control-label"></label>
+                <input asp-for="SmithingRank" class="form-control" />
+                <span asp-validation-for="SmithingRank" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SmithingLevel" class="control-label"></label>
+                <input asp-for="SmithingLevel" class="form-control" />
+                <span asp-validation-for="SmithingLevel" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SmithingXp" class="control-label"></label>
+                <input asp-for="SmithingXp" class="form-control" />
+                <span asp-validation-for="SmithingXp" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MiningRank" class="control-label"></label>
+                <input asp-for="MiningRank" class="form-control" />
+                <span asp-validation-for="MiningRank" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MiningLevel" class="control-label"></label>
+                <input asp-for="MiningLevel" class="form-control" />
+                <span asp-validation-for="MiningLevel" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MiningXp" class="control-label"></label>
+                <input asp-for="MiningXp" class="form-control" />
+                <span asp-validation-for="MiningXp" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="HerbloreRank" class="control-label"></label>
+                <input asp-for="HerbloreRank" class="form-control" />
+                <span asp-validation-for="HerbloreRank" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="HerbloreLevel" class="control-label"></label>
+                <input asp-for="HerbloreLevel" class="form-control" />
+                <span asp-validation-for="HerbloreLevel" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="HerbloreXp" class="control-label"></label>
+                <input asp-for="HerbloreXp" class="form-control" />
+                <span asp-validation-for="HerbloreXp" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AgilityRank" class="control-label"></label>
+                <input asp-for="AgilityRank" class="form-control" />
+                <span asp-validation-for="AgilityRank" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AgilityLevel" class="control-label"></label>
+                <input asp-for="AgilityLevel" class="form-control" />
+                <span asp-validation-for="AgilityLevel" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="AgilityXp" class="control-label"></label>
+                <input asp-for="AgilityXp" class="form-control" />
+                <span asp-validation-for="AgilityXp" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ThievingRank" class="control-label"></label>
+                <input asp-for="ThievingRank" class="form-control" />
+                <span asp-validation-for="ThievingRank" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ThievingLevel" class="control-label"></label>
+                <input asp-for="ThievingLevel" class="form-control" />
+                <span asp-validation-for="ThievingLevel" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ThievingXp" class="control-label"></label>
+                <input asp-for="ThievingXp" class="form-control" />
+                <span asp-validation-for="ThievingXp" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SlayerRank" class="control-label"></label>
+                <input asp-for="SlayerRank" class="form-control" />
+                <span asp-validation-for="SlayerRank" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SlayerLevel" class="control-label"></label>
+                <input asp-for="SlayerLevel" class="form-control" />
+                <span asp-validation-for="SlayerLevel" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="SlayerXp" class="control-label"></label>
+                <input asp-for="SlayerXp" class="form-control" />
+                <span asp-validation-for="SlayerXp" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FarmingRank" class="control-label"></label>
+                <input asp-for="FarmingRank" class="form-control" />
+                <span asp-validation-for="FarmingRank" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FarmingLevel" class="control-label"></label>
+                <input asp-for="FarmingLevel" class="form-control" />
+                <span asp-validation-for="FarmingLevel" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FarmingXp" class="control-label"></label>
+                <input asp-for="FarmingXp" class="form-control" />
+                <span asp-validation-for="FarmingXp" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="RunecraftRank" class="control-label"></label>
+                <input asp-for="RunecraftRank" class="form-control" />
+                <span asp-validation-for="RunecraftRank" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="RunecraftLevel" class="control-label"></label>
+                <input asp-for="RunecraftLevel" class="form-control" />
+                <span asp-validation-for="RunecraftLevel" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="RunecraftXp" class="control-label"></label>
+                <input asp-for="RunecraftXp" class="form-control" />
+                <span asp-validation-for="RunecraftXp" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="HunterRank" class="control-label"></label>
+                <input asp-for="HunterRank" class="form-control" />
+                <span asp-validation-for="HunterRank" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="HunterLevel" class="control-label"></label>
+                <input asp-for="HunterLevel" class="form-control" />
+                <span asp-validation-for="HunterLevel" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="HunterXp" class="control-label"></label>
+                <input asp-for="HunterXp" class="form-control" />
+                <span asp-validation-for="HunterXp" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ConstructionRank" class="control-label"></label>
+                <input asp-for="ConstructionRank" class="form-control" />
+                <span asp-validation-for="ConstructionRank" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ConstructionLevel" class="control-label"></label>
+                <input asp-for="ConstructionLevel" class="form-control" />
+                <span asp-validation-for="ConstructionLevel" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ConstructionXp" class="control-label"></label>
+                <input asp-for="ConstructionXp" class="form-control" />
+                <span asp-validation-for="ConstructionXp" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

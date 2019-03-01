@@ -1,0 +1,462 @@
+﻿@model RoadTo99.Models.Highscore
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Highscore</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.DownloadDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DownloadDate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.TotalRank)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TotalRank)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.TotalLevel)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TotalLevel)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.TotalXp)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TotalXp)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.AttackRank)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.AttackRank)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.AttackLevel)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.AttackLevel)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.AttackXp)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.AttackXp)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DefenceRank)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DefenceRank)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DefenceLevel)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DefenceLevel)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DefenceXp)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.DefenceXp)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.StrengthRank)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.StrengthRank)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.StrengthLevel)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.StrengthLevel)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.StrengthXp)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.StrengthXp)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.HitpointsRank)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.HitpointsRank)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.HitpointsLevel)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.HitpointsLevel)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.HitpointsXp)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.HitpointsXp)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.RangedRank)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.RangedRank)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.RangedLevel)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.RangedLevel)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.RangedXp)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.RangedXp)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PrayerRank)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PrayerRank)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PrayerLevel)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PrayerLevel)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PrayerXp)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PrayerXp)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.MagicRank)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.MagicRank)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.MagicLevel)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.MagicLevel)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.MagicXp)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.MagicXp)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CookingRank)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CookingRank)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CookingLevel)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CookingLevel)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CookingXp)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CookingXp)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.WoodcuttingRank)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.WoodcuttingRank)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.WoodcuttingLevel)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.WoodcuttingLevel)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.WoodcuttingXp)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.WoodcuttingXp)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.FletchingRank)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FletchingRank)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.FletchingLevel)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FletchingLevel)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.FletchingXp)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FletchingXp)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.FishingRank)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FishingRank)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.FishingLevel)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FishingLevel)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.FishingXp)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FishingXp)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.FiremakingRank)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FiremakingRank)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.FiremakingLevel)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FiremakingLevel)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.FiremakingXp)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FiremakingXp)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CraftingRank)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CraftingRank)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CraftingLevel)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CraftingLevel)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CraftingXp)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CraftingXp)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.SmithingRank)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SmithingRank)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.SmithingLevel)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SmithingLevel)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.SmithingXp)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SmithingXp)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.MiningRank)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.MiningRank)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.MiningLevel)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.MiningLevel)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.MiningXp)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.MiningXp)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.HerbloreRank)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.HerbloreRank)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.HerbloreLevel)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.HerbloreLevel)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.HerbloreXp)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.HerbloreXp)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.AgilityRank)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.AgilityRank)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.AgilityLevel)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.AgilityLevel)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.AgilityXp)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.AgilityXp)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ThievingRank)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ThievingRank)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ThievingLevel)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ThievingLevel)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ThievingXp)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ThievingXp)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.SlayerRank)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SlayerRank)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.SlayerLevel)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SlayerLevel)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.SlayerXp)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SlayerXp)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.FarmingRank)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FarmingRank)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.FarmingLevel)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FarmingLevel)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.FarmingXp)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FarmingXp)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.RunecraftRank)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.RunecraftRank)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.RunecraftLevel)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.RunecraftLevel)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.RunecraftXp)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.RunecraftXp)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.HunterRank)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.HunterRank)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.HunterLevel)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.HunterLevel)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.HunterXp)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.HunterXp)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ConstructionRank)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ConstructionRank)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ConstructionLevel)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ConstructionLevel)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ConstructionXp)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ConstructionXp)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Player)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Player.PlayerName)
+        </dd>
+    </dl>
+</div>
+<div>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    <a asp-action="Index">Back to List</a>
+</div>
