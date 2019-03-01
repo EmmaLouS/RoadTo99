@@ -14,7 +14,7 @@ namespace RoadTo99.Models
             if (!optionsBuilder.IsConfigured)
             {
 //#warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
-                optionsBuilder.UseSqlServer(@"Server=192.168.0.2\JAMIE\SQLExpress,1433;Database=runescape;User Id=Emma;Password=jamie182;");
+                optionsBuilder.UseSqlServer(@"Server=192.168.0.2\JAMIE\SQLExpress,1433;Database=runescape; ADD LOCAL LOGIN DETAILS HERE IF CLONING LOCALLY - FUTURE PLAN TO SET UP HOSTED WEB SERVICE FOR THIS;"); //TODO : add to config file
             }
         }
 
